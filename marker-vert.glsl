@@ -16,6 +16,8 @@ const float borderLevel = .5;
 varying vec4 fragColor, fragBorderColor;
 varying float fragPointSize, fragBorderRadius, fragWidth, fragBorderColorLevel, fragColorLevel;
 
+invariant gl_Position;
+
 float pointSizeScale = (constPointSize) ? 2. : pixelRatio;
 
 bool isDirect = (paletteSize.x < 1.);

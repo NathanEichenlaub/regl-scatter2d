@@ -15,6 +15,8 @@ const float maxSize = 100.;
 varying vec4 fragColor, fragBorderColor;
 varying float fragBorderRadius, fragWidth;
 
+invariant gl_Position;
+
 float pointSizeScale = (constPointSize) ? 2. : pixelRatio;
 
 bool isDirect = (paletteSize.x < 1.);
